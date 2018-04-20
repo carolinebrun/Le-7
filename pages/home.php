@@ -13,7 +13,7 @@
 						<?php $i = 1; foreach(collection("Slideshow")->find() as $item): ?>
 						
 						<div class="item <?php if($i++==1){ echo 'active'; } ?>">
-							<img src="<?= $item['img']; ?>">
+							<img src="<?= $item['img']; ?>" alt="meilleur-restaurant-perigueux">
 						</div>
 						
 						<?php endforeach;?>
@@ -69,24 +69,30 @@
 <section id="home_3">
 	<div class="container">
 		<div class="row">
-			<div class="scrollme"><div class="animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0.5" data-translatex="-200">
+			<div class="scrollme"><div class="animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0.5" data-translatex="-200" style="display:flex;">
 			<div class="col-md-2 col-xs-4">
-				<?= thumbnail(cockpit('regions:region_field', 'Home', 'img_1', 'value'), 200, 200); ?>
+				<!-- <?= thumbnail(cockpit('regions:region_field', 'Home', 'img_1', 'value'), 200, 200); ?> -->
+				<img src="<?= cockpit('regions:region_field', 'Home', 'img_1', 'value'); ?>" alt="Café bar Périgueux">
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<?= thumbnail(cockpit('regions:region_field', 'Home', 'img_2', 'value'), 200, 200); ?>
+				<!-- <?= thumbnail(cockpit('regions:region_field', 'Home', 'img_2', 'value'), 200, 200); ?> -->
+				<img src="<?= cockpit('regions:region_field', 'Home', 'img_2', 'value'); ?>" alt="Restaurant fruits de mer Périgueux">
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<?= thumbnail(cockpit('regions:region_field', 'Home', 'img_3', 'value'), 200, 200); ?>
+				<!-- <?= thumbnail(cockpit('regions:region_field', 'Home', 'img_3', 'value'), 200, 200); ?> -->
+				<img src="<?= cockpit('regions:region_field', 'Home', 'img_3', 'value'); ?>" alt="Restaurant salades Périgueux">
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<?= thumbnail(cockpit('regions:region_field', 'Home', 'img_4', 'value'), 200, 200); ?>
+				<!-- <?= thumbnail(cockpit('regions:region_field', 'Home', 'img_4', 'value'), 200, 200); ?> -->
+				<img src="<?= cockpit('regions:region_field', 'Home', 'img_4', 'value'); ?>" alt="Restaurant Périgueux">
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<?= thumbnail(cockpit('regions:region_field', 'Home', 'img_5', 'value'), 200, 200); ?>
+				<!-- <?= thumbnail(cockpit('regions:region_field', 'Home', 'img_5', 'value'), 200, 200); ?> -->
+				<img src="<?= cockpit('regions:region_field', 'Home', 'img_5', 'value'); ?>" alt="Bar brasserie cocktails Périgueux">
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<?= thumbnail(cockpit('regions:region_field', 'Home', 'img_6', 'value'), 200, 200); ?>
+				<!-- <?= thumbnail(cockpit('regions:region_field', 'Home', 'img_6', 'value'), 200, 200); ?> -->
+				<img src="<?= cockpit('regions:region_field', 'Home', 'img_6', 'value'); ?>" alt="Restaurant tapas tartines Périgueux">
 			</div>
 			</div></div>
 		</div>
