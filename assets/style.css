@@ -344,4 +344,11 @@ legend{
 		background-attachment: scroll;
 	}
 
+
+	#date_event_mois {
+		font-size:13px !important;
+	
+	}
+
+
 }

@@ -54,10 +54,10 @@ $item = collection("Events")->findOne([$find]); ?>
 		</div>		
 		<div class="row">
 
-			<div class="scrollme"><div class="animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0.5" data-translatex="-200">
+			<div class="scrollme" style="display:flex; flex-wrap:wrap;">
 				<?php foreach(collection("Events")->find()->sort(["custom-order"=>1]) as $item): ?>
 	
-				<a href="/evenements/<?= $item['titre_slug']; ?>" class="col-md-2 col-xs-6">
+				<a href="/evenements/<?= $item['titre_slug']; ?>" class="col-md-2 col-xs-5" style="padding:0px; margin:12px;">
 					<div class="item_event">
 						<div class="hover">
 							<p><?= $item['titre']; ?></p>
@@ -68,7 +68,7 @@ $item = collection("Events")->findOne([$find]); ?>
 				</a>			
 				
 				<?php endforeach;?>
-			</div></div>
+			</div>
 		</div>
 	</div>
 </section>
